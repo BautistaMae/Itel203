@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+</head>
+<style>
+	*{
+     padding: 0;
+     margin: 0;
+     font-family: Consolas;
+     box-sizing: border-box;
+	}
+	body{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+		background-image: url(keyboard2.jpg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover	;
+	}
+	.container{
+        max-width: 650px;
+        padding: 28px;
+        margin: 0 28px;
+        border-radius: 10px;
+        overflow: hidden;
+        background: rgb(0, 0, 0, 0.2);
+        box-shadow: 0 15px 20px rgb(0, 0, 0, 0.6);
+	}
+	h2{
+		font-size: 26px;
+		font-weight: bold;
+		text-align: center;
+		color: #fff;
+		padding-bottom: 8px;
+		border-bottom: 1px solid silver;
+	}
+	.content{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding: 20px 0;
+	}
+	.input-box{
+		display: flex;
+		flex-wrap: wrap;
+		width: 50%;
+		padding-bottom: 15px;
+	}
+	.input-box:nth-child(2n){
+		justify-content: end;
+	}
+	.input-box label, .gender-title{
+		width: 95%;
+		color: white;
+		font-weight: bold;
+		margin: 5px 0;
+	}
+	.gender-title{
+		font-size: 16px;
+	}
+	.input-box input{
+		height: 40px;
+		width: 95%;
+		padding: 0 10px;
+		border-radius: 5px;
+		border: 1px solid #ccc;
+		outline: none;
+	}
+	.input-box input:is(:focus,:valid){
+		box-shadow: 0 3px 6px rgb(0, 0, 0, 0.2);
+	}
+	c{
+        padding: 0 20px 0 5px;
+        font-size: 14px;
+	}
+	.gender-category{
+		color: #fff;
+	}
+	.gender-category label, .gender-category input{
+        cursor: pointer;
+	}
+	.alert p{
+        font-size: 14px;
+        font-style: italic;
+        color: #fff;
+        margin: 5px 0;
+        padding: 10px;
+        line-height: 1.5;
+	}
+	.alert a{
+		 font-weight: bold;
+		 text-decoration: none;
+		 color: skyblue;
+	}
+	.alert a:hover{
+		font-weight: bold;
+		text-decoration: underline;
+		color: #380036;
+	}
+	.button-container{
+		margin: 15px 0;
+	}
+	.button-container button{
+		width: 100%;
+		margin-top: 10px;
+		padding: 10px;
+		display: block;
+		font-size: 20px;
+		color: #fff;
+		border: none;
+		border-radius: 5px;
+		background-image: linear-gradient(to right, #E34CA3, #232122);
+		cursor: pointer;
+		transition: 0.3s;
+	}
+	.button-container button:hover{
+		background-image: linear-gradient(to right, #232122, #E34CA3);
+	}
+</style>
+<body>
+ <div class="container">
+ 	<form action="" method="post">
+ 		<h2>Registration</h2>
+ 		<div class="content">
+ 			<div class="input-box">
+ 				<label for="name">First Name</label>
+ 				<input type="text" placeholder="First name" name="name" required>
+ 			</div>
+ 			<div class="input-box">
+ 				<label for="username">Last Name</label>
+ 				<input type="text" placeholder="Last name" name="uname" required>
+ 			</div>
+ 			<div class="input-box">
+ 				<label for="email">Email</label>
+ 				<input type="email" placeholder="Enter your valid email address" name="email" required>
+ 			</div>
+ 			<div class="input-box">
+ 				<label for="phone">Phone Number</label>
+ 				<input type="tel" placeholder="Enter phone number" name="phone" required>
+ 			</div>
+ 			<div class="input-box">
+ 				<label for="Age">Age</label>
+ 				<input type="Age" placeholder="Enter your age" name="age" required>
+ 			</div>
+ 			<div class="input-box">
+ 				<label for="address">Address</label>
+ 				<input type="address" placeholder="Enter you address" name="address" required>
+ 			</div>
+ 			<span class="gender-title">Gender</span>
+ 			<div class="gender-category">
+ 				<input type="radio" name="gender" id="male">
+ 				<label for="male">Male</label>
+ 				<input type="radio" name="gender" id="female">
+ 				<label for="female">Female</label>
+ 				<input type="radio" name="gender" id="other">
+ 				<label for="other">Other</label>
+ 			</div>
+ 		</div>
+ 		<div class="alert">
+ 			<p>By clicking Sign Up, you agree to our <a href="#">Terms,</a> <a href="#">Privacy Policy</a> and <a href="#">Cookies Policy.</a> You may recive SMS notification from us and can opt at any time.</p>
+ 		</div>
+ 		<div class="button-container">
+ 			<button>Register</button>
+ 		</div>
+ 	</form>
+ </div>
+  	
+</body>
+</html>
