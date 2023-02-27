@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>resume</title>
+	<style>
+	@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body{
+	background-image: linear-gradient(lightgray, lightpink);
+	height: 120vh;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+*{
+	margin: 0px; padding: 0px; font-family: 'Montserrat', sans-serif;
+}
+.main{
+	background-color: white;
+	height: auto;
+	width: 650px;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	top: 60%;
+}
+.left{
+	background-color: lightpink;
+	width: 200px;
+	height: 100%;
+	float: left;
+}
+.right{
+	width: 450px;
+	float: left;
+}
+.profile-img{
+	height: 180px;
+	width: 180px;
+	background-color: #ddd;
+	border-radius: 50%;
+	margin-bottom: 15px;
+	margin-left: 60px;
+	border: 10px solid lightpink;
+	box-shadow: 6px 7px 9px 5px lightpink;
+}
+.profile-img img{
+	width: 101%;
+	height: 100%;
+	border-radius: 50%;
+}
+.box-1{
+	position: relative;
+}
+.heading{
+	background-color: #4d4d4d;
+	padding: 10px;
+	color: lightpink;
+	text-align: left;
+	padding-left: 15px;
+	margin-right: -15px;
+}
+.heading::after{
+	content: '';
+	position: absolute;
+	width: 21px;
+	height: 20px;
+	background-color: #5a5959;
+	left: 191px;
+	top: 26px;
+	transform:rotate(56deg);
+	z-index: -1;
+}
+.p1{
+	padding: 9px 10px;
+	font-size: 11px;
+}
+.icons1{
+	font-size: 16px!important;
+	padding-right: 10px!important;
+	vertical-align: sub;
+}
+.skill-container{
+	width: 90%;
+	background-color: #4d4d4d;
+	margin: 0px 10px;
+}
+.skill{
+	text-align: right;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	color: white;
+}
+.html{
+	width: 20%;
+	background-color: white;
+}
+.css{
+	width: 90%;
+	background-color: white;
+}
+.js{
+	width: 60%;
+	background-color: white;
+}
+.jquery{
+	width: 80%;
+	background-color: white;
+}
+.web {
+	width: 40%;
+	background-color: white;
+}
+.dance {
+	width: 80%;
+	background-color: white;
+	}
+.gra{
+	width: 70%;
+	background-color: white;
+}
+.icons2{
+	padding: 18px 10px;
+}
+.name-div{
+	padding: 86px 0px 60px 55px;
+	text-align: center;
+	letter-spacing: 3px;
+}
+.name-div h1{
+	margin-bottom: 10px;
+}
+.box-2{
+	padding: 0px 50px;
+	margin-top: 20px;
+}
+.p2{
+	font-size: 10px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	word-spacing: 2px;
+	line-height: 18px;
+	margin-top: 5px;
+}
+h2{
+	font-size: 16px;
+	margin-bottom: 15px;
+}
+.icons3{
+	vertical-align: bottom;
+	font-size: 21px!important;
+	color: #4d4d4d;
+}
+.p3{
+	font-size: 13px;
+	word-spacing: 1px;
+	letter-spacing: 0px;
+	margin-top: 10px;
+}
+.p3 span{
+	color:lightpink; padding-left: 20px;
+}
+.h-div{
+	font-size: 13px;
+	padding: 9px 10px;
+}
+.p4{
+	padding: 9px 10px;
+	font-size: 13px;
+}
+</style>
+</head>
+<body>
+
+<div class="main">
+	<div class="left">
+		<br>
+		<div class="profile-img"><img src="mae.jpg"></div>
+
+		<div class="box-1">
+			<div class="heading">
+				<p>PERSONALITY</p>
+			</div>
+			<p class="p4">Just Studying</p>
+			<p class="p4">Watching</p>
+		</div>
+
+		<div class="box-1">
+			<div class="heading">
+				<p>INTERESTS</p>
+			</div>
+
+			<p class="p1">Programming
+			<div class="skill-container">
+				<div class="skill html"></div>
+			</div>
+			</p>
+
+			<p class="p1">Dancing
+			<div class="skill-container">
+				<div class="skill css"></div>
+			</div>
+			</p>
+
+			<p class="p1">Walking	
+			<div class="skill-container">
+				<div class="skill js"></div>
+			</div>
+			</p>
+
+		</div>
+		<br>
+
+		<div class="box-1">
+			<div class="heading">
+				<p>SKILLS</p>
+			</div>
+
+			<p class="p1">WEBSITE DESIGN
+			<div class="skill-container">
+				<div class="skill web"></div>
+			</div>
+			</p>
+
+			<p class="p1">DANCER
+			<div class="skill-container">
+				<div class="skill dance"></div>
+			</div>
+			</p>
+			
+		</div>
+		<br>
+		<div class="box-1">
+			<div class="heading">
+				<p>HOBBIES</p>
+			</div>
+
+			<div class="h-div">
+				<p>Dancing</p>
+				<p>Gaming</p>
+				<p>Watching</p>
+			</div>
+			
+		</div>
+
+	</div>
+
+
+	<div class="right">
+		<div class="name-div">
+			<h1>MAE BAUTISTA</h1>
+			<p>COLLEGE STUDENT</p>
+		</div>
+
+		<div class="box-2">
+			<h2>ABOUT ME <i style="font-size: 28px!important; "></i></h2>
+			<p class="p2">
+				I'm just a simple person who studies at LSPU and I worked in sewing with my parents. This helped my parents during the pandemic. I'm kind and intelligent,<br> hardworking and what I want in life is finish school and help my parents i was born on october 29 2001 the motto is dont give up in life just trust god plan to us.
+			</p>
+			<br>
+			<p class="p3">Age:<span>21 years old</span></p>
+			<p class="p3">Birthday:<span>October 29 2001<span></p>
+		</div>
+
+        <br>
+		<div class="box-2">
+			<h2>EDUCATION</h2>
+			<p class="p3">2010-2013 <span>Famy Elementary School</span></p>
+			<p class="p2">
+				 My Elementary School
+			</p>
+
+			<p class="p3">2013-2016 <span>Famy Integrated National High School </span></p>
+			<p class="p2">
+				My High School
+			</p>
+
+			<p class="p3">2016-2021 <span>Famy Integrated National High School</span></p>
+			<p class="p2">
+				My Senior High School
+			</p>
+		</div>
+
+	</div>
+</div>
+
+
+
+
+</body>
+</html>
