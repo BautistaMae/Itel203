@@ -1,125 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>resume</title>
-<link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Title</title>
 </head>
 <body>
-
-<div class="main">
-	<div class="left">
-		<br>
-		<div class="profile-img"><img src="mae.jpg"></div>
-
-		<div class="box-1">
-			<div class="heading">
-				<p>PERSONALITY</p>
-			</div>
-			<p class="p4">Just Studying</p>
-			<p class="p4">Watching</p>
-		</div>
-
-		<div class="box-1">
-			<div class="heading">
-				<p>INTERESTS</p>
-			</div>
-
-			<p class="p1">Programming
-			<div class="skill-container">
-				<div class="skill html"></div>
-			</div>
-			</p>
-
-			<p class="p1">Dancing
-			<div class="skill-container">
-				<div class="skill css"></div>
-			</div>
-			</p>
-
-			<p class="p1">Walking	
-			<div class="skill-container">
-				<div class="skill js"></div>
-			</div>
-			</p>
-
-		</div>
-		<br>
-
-		<div class="box-1">
-			<div class="heading">
-				<p>SKILLS</p>
-			</div>
-
-			<p class="p1">WEBSITE DESIGN
-			<div class="skill-container">
-				<div class="skill web"></div>
-			</div>
-			</p>
-
-			<p class="p1">DANCER
-			<div class="skill-container">
-				<div class="skill dance"></div>
-			</div>
-			</p>
-
-		</div>
-		<br>
-		<div class="box-1">
-			<div class="heading">
-				<p>HOBBIES</p>
-			</div>
-
-			<div class="h-div">
-				<p>Dancing</p>
-				<p>Gaming</p>
-				<p>Watching</p>
-			</div>
-
-		</div>
-
-	</div>
-
-
-	<div class="right">
-		<div class="name-div">
-			<h1>MAE BAUTISTA</h1>
-			<p>COLLEGE STUDENT</p>
-		</div>
-
-		<div class="box-2">
-			<h2>ABOUT ME <i style="font-size: 28px!important; "></i></h2>
-			<p class="p2">
-				I'm just a simple person who studies at LSPU and I worked in sewing with my parents. This helped my parents during the pandemic. I'm kind and intelligent,<br> hardworking and what I want in life is finish school and help my parents i was born on october 29 2001 the motto is dont give up in life just trust god plan to us.
-			</p>
-			<br>
-			<p class="p3">Age:<span>21 years old</span></p>
-			<p class="p3">Birthday:<span>October 29 2001<span></p>
-		</div>
-
-        <br>
-		<div class="box-2">
-			<h2>EDUCATION</h2>
-			<p class="p3">2010-2013 <span>Famy Elementary School</span></p>
-			<p class="p2">
-				 My Elementary School
-			</p>
-
-			<p class="p3">2013-2016 <span>Famy Integrated National High School </span></p>
-			<p class="p2">
-				My High School
-			</p>
-
-			<p class="p3">2016-2021 <span>Famy Integrated National High School</span></p>
-			<p class="p2">
-				My Senior High School
-			</p>
-		</div>
-
-	</div>
-</div>
-
-
-
-
+    <div class="container">
+        <div class="calculator dark">
+            <div class="theme-toggler active">
+                <i class="toggler-icon"></i>
+            </div>
+            <div class="display-screen">
+                <div id="display"></div>
+            </div>
+            <div class="buttons">
+                <table>
+                    <tr>
+                        <td><button class="btn-operator" id="clear">C</button></td>
+                        <td><button class="btn-operator" id="/">&divide;</button></td>
+                        <td><button class="btn-operator" id="*">&times;</button></td>
+                        <td><button class="btn-operator" id="backspace"><</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-number" id="7">7</button></td>
+                        <td><button class="btn-number" id="8">8</button></td>
+                        <td><button class="btn-number" id="9">9</button></td>
+                        <td><button class="btn-operator" id="-">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-number" id="4">4</button></td>
+                        <td><button class="btn-number" id="5">5</button></td>
+                        <td><button class="btn-number" id="6">6</button></td>
+                        <td><button class="btn-operator" id="+">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-number" id="1">1</button></td>
+                        <td><button class="btn-number" id="2">2</button></td>
+                        <td><button class="btn-number" id="3">3</button></td>
+                        <td rowspan="2"><button class="btn-equal" id="equal">=</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-operator" id="(">(</button></td>
+                        <td><button class="btn-number" id="0">0</button></td>
+                        <td><button class="btn-operator" id=")">)</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

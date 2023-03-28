@@ -1,82 +1,163 @@
-*{
-	margin: 6px 1px 5px 5px;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+    transition: all 0.5s ease;
 }
-label{
-	color: black;
-	font-size: 20px;
+
+body {
+    font-family: sans-serif;
 }
-body{
-   background-image: linear-gradient(lightgray, lightpink);
-  height: 120vh;
-  font-weight: bold;
-  letter-spacing: 2px;  
-   }
-   legend{
-   	color: black;
-   	font-size: 20px;
-   	height: 10px;
-   }
-  .design input {
-   	border-radius: 100px;
-    height: 25px;
-    width: 20%;
-    padding: 5px 15px;
-    font-size: 15px;
-   }
-   button{
-   	width: 20%;
-	padding: 10px 0;
-	text-align: center;
-	margin: 10px;
-	border-radius: 25px;
-	font-weight: bold;
-	border: 1px solid black;
-	background-color: pink;
-	color: black;
-	cursor: pointer;
-	font-size: 20px;
-	box-shadow: 10px;
-   }
-   button:hover{
-   	background-color: hotpink;
-   }
-  label input{
-   	background-color: whitesmoke;
-   	height: 25px;
-   	color: blue;
-   }
-   select{
-   	border-radius: 20px;
-    padding: px 30px;
-    font-size: 15px;
-   }
-   .datetime-local{
-   	background-color: blue;
-   }
- .box input{
-   	font-size: 15px;
-   	border-radius: 100px;
-   	padding: 4px 7px;
-   	color: black;
-   }
-   .place input{
-   	border-radius: 100px;
-   	width: 10%;
-   	padding: 3px 10px;
-   	font-size: 15px;
-   }
-   .Special input{
-   	background-color: gray;
-   }
-   input:hover{
-   	background-color: lightgray;
-   }
-   .hello{
-    width: 950px;
-    height: 810px;
-    border: 2px solid black;
-    margin: 0 auto;
-    background-color: lightpink;
-    padding: 1px 5px;
-   }
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+body {
+    background-image: linear-gradient( to bottom right, rgba(60,41,166,1.0),rgba(210,53,165));
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+
+.calculator {
+    position: relative;
+    height: auto;
+    width: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px #000;
+}
+
+.theme-toggler {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.theme-toggler.active {
+    color: #333;
+}
+
+.theme-toggler.active::before {
+    background-color: white;
+}
+
+.theme-toggler::before {
+    content: '';
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: black;
+    z-index: -1;
+}
+
+#display {
+    margin: 0 10px;
+    height: 150px;
+    width: auto;
+    max-width: 270px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 30px;
+    margin-bottom: 20px;
+    overflow-x: scroll;
+  }
+
+#display::-webkit-scrollbar {
+    display: block;
+    height: 3px;
+}
+
+button {
+    height: 60px;
+    width: 60px;
+    border: 0;
+    border-radius: 30px;
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+button#equal {
+    height: 130px;
+}
+
+/* light theme */
+
+.calculator {
+    background-color: hotpink;
+}
+
+.calculator #display {
+    color: black;
+}
+
+.calculator button#clear {
+    background-color: black;
+    color: hotpink;
+}
+
+.calculator button.btn-number {
+    background-color: black;
+    color: hotpink;
+}
+
+.calculator button.btn-operator {
+    background-color: black;
+    color: hotpink;
+  }
+  
+  .calculator button.btn-equal {
+    background-color: black;
+    color: hotpink;
+  }
+
+  /* dark theme */
+
+  .calculator.dark {
+    background-color: #071115;
+  }
+
+  .calculator.dark #display {
+    color: white;
+  }
+
+  .calculator.dark button#clear {
+    background-color: #B0ADAA;
+    color: black;
+  }
+
+  .calculator.dark button.btn-number {
+    background-color: #504E4C;
+    color: white;
+  }
+
+  .calculator.dark button.btn-operator {
+    background-color: #F39338;
+    color: #FFFEFD;
+  }
+  
+  .calculator.dark button.btn-equal {
+    background-color: #B0ADAA;
+    color: black;
+  }
   
